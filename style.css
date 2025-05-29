@@ -1,0 +1,131 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      /* background-color: #bbbff1; */
+
+  }
+
+  .logo {
+      height: 70px;
+      width: 85px;
+
+  }
+
+  .logo img {
+      height: 100%;
+      width: 100%;
+  }
+
+  .head {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+  }
+
+  .list {
+      display: flex;
+      justify-content: space-around;
+      width: 50%;
+      /* margin-top: 20px; */
+  }
+
+  .list ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 70%;
+  }
+
+  .list ul li {
+      margin: 0 20px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #fff;
+  }
+
+  .list ul li:hover {
+      color: #000;
+      cursor: pointer;
+  }
+
+  .list ul li a {
+      text-decoration: none;
+      color: #290164;
+  }
+
+
+  button {
+      background-color: #290164;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      height: 40px;
+      padding: 0 25px;
+      margin-top: 15px;
+
+  }
+  .paretns {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+  }
+
+  .planet {
+      width: 1000px;
+      height: 1000px;
+      border-radius: 50%;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 0 40px rgba(0, 153, 255, 0.8);
+      /* box-shadow: 0 0 40px rgba(47, 0, 255, 0.379);0 */
+      position: absolute;
+      top: 70px;
+
+  }
+
+  .texture {
+      width: 1000px;
+      height: 1000px;
+      background: conic-gradient(from 0deg, #dff6ff, #80c7ff, #0057ff, #60dcff, #ba60ff, #FF60B7);
+      position: absolute;
+      top: 15px;
+      left: 10px;
+      border-radius: 50%;
+      filter: blur(30px);
+      animation: rotate 6s linear infinite;
+  }
+
+
+
+  @keyframes rotate {
+      0% {
+          transform: rotate(0deg);
+      }
+
+      100% {
+          transform: rotate(360deg);
+      }
+  }
+
+
+  .text{
+    width: 100%;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .text h1{
+    width: 40%;
+   color: #2f0356;
+   font-size: 60px;
+   padding-top: 50px;
+  }
